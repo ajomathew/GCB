@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\Ajo-Project\Desktop\GCB-Site" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="Site/GCB" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="True" profileName="GCB" publishMethod="FTP" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="GCB-1TestPage.html" publishTime="12/16/2010 10:03:09" />
+    <file relUrl="Web.config" publishTime="12/26/2010 10:23:58" />
+    <file relUrl="Silverlight.js" publishTime="12/16/2010 10:03:09" />
+    <file relUrl="GCB-1TestPage.aspx" publishTime="12/26/2010 05:52:29" />
+    <file relUrl="bin/GCB-1.Web.dll" publishTime="12/26/2010 10:23:38" />
+    <file relUrl="bin/GCB-1.Web.pdb" publishTime="12/26/2010 10:23:38" />
+    <file relUrl="ClientBin/GCB-1.xap" publishTime="12/26/2010 08:19:13" />
+  </publishProfile>
+</publishData>

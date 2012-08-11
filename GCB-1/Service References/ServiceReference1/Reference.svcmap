@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="03deb6bb-be2b-4a6b-8763-b5d27d942b94" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4278/ServiceGCB.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceGCB.xsd" MetadataType="Schema" ID="d3208ed0-63ae-4788-bcbb-fe6ec00c9358" SourceId="1" SourceUrl="http://localhost:4278/ServiceGCB.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceGCB.wsdl" MetadataType="Wsdl" ID="a87c0bb4-0f12-4a9c-940f-a997ea90a712" SourceId="1" SourceUrl="http://localhost:4278/ServiceGCB.svc?wsdl" />
+    <MetadataFile FileName="ServiceGCB1.xsd" MetadataType="Schema" ID="787e4e96-2bca-438d-ae4b-7e200c0c9746" SourceId="1" SourceUrl="http://localhost:4278/ServiceGCB.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceGCB2.xsd" MetadataType="Schema" ID="b2313bfa-e9b4-4c4d-ae62-049ca7b6d64e" SourceId="1" SourceUrl="http://localhost:4278/ServiceGCB.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceGCB.disco" MetadataType="Disco" ID="3506888b-98e6-44bb-8e53-796c10cdd28b" SourceId="1" SourceUrl="http://localhost:4278/ServiceGCB.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

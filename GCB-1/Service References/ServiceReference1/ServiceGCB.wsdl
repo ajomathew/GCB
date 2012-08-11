@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceGCB" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4278/ServiceGCB.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4278/ServiceGCB.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4278/ServiceGCB.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceGCB_InsertOpe_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertOpe" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGCB_InsertOpe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertOpeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGCB_selectop_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectop" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGCB_selectop_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectopResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGCB_IsAvail_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsAvail" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGCB_IsAvail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsAvailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGCB_fill_InputMessage">
+    <wsdl:part name="parameters" element="tns:fill" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGCB_fill_OutputMessage">
+    <wsdl:part name="parameters" element="tns:fillResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGCB_selectxml_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectxml" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGCB_selectxml_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectxmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGCB_downloadfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:downloadfile" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGCB_downloadfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:downloadfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGCB_downloadfileonload_InputMessage">
+    <wsdl:part name="parameters" element="tns:downloadfileonload" />
+  </wsdl:message>
+  <wsdl:message name="IServiceGCB_downloadfileonload_OutputMessage">
+    <wsdl:part name="parameters" element="tns:downloadfileonloadResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceGCB">
+    <wsdl:operation name="InsertOpe">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGCB/InsertOpe" message="tns:IServiceGCB_InsertOpe_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGCB/InsertOpeResponse" message="tns:IServiceGCB_InsertOpe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectop">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGCB/selectop" message="tns:IServiceGCB_selectop_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGCB/selectopResponse" message="tns:IServiceGCB_selectop_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsAvail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGCB/IsAvail" message="tns:IServiceGCB_IsAvail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGCB/IsAvailResponse" message="tns:IServiceGCB_IsAvail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="fill">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGCB/fill" message="tns:IServiceGCB_fill_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGCB/fillResponse" message="tns:IServiceGCB_fill_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectxml">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGCB/selectxml" message="tns:IServiceGCB_selectxml_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGCB/selectxmlResponse" message="tns:IServiceGCB_selectxml_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="downloadfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGCB/downloadfile" message="tns:IServiceGCB_downloadfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGCB/downloadfileResponse" message="tns:IServiceGCB_downloadfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="downloadfileonload">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceGCB/downloadfileonload" message="tns:IServiceGCB_downloadfileonload_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceGCB/downloadfileonloadResponse" message="tns:IServiceGCB_downloadfileonload_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceGCB" type="tns:IServiceGCB">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertOpe">
+      <soap:operation soapAction="http://tempuri.org/IServiceGCB/InsertOpe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectop">
+      <soap:operation soapAction="http://tempuri.org/IServiceGCB/selectop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsAvail">
+      <soap:operation soapAction="http://tempuri.org/IServiceGCB/IsAvail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fill">
+      <soap:operation soapAction="http://tempuri.org/IServiceGCB/fill" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectxml">
+      <soap:operation soapAction="http://tempuri.org/IServiceGCB/selectxml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="downloadfile">
+      <soap:operation soapAction="http://tempuri.org/IServiceGCB/downloadfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="downloadfileonload">
+      <soap:operation soapAction="http://tempuri.org/IServiceGCB/downloadfileonload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceGCB">
+    <wsdl:port name="BasicHttpBinding_IServiceGCB" binding="tns:BasicHttpBinding_IServiceGCB">
+      <soap:address location="http://localhost:4278/ServiceGCB.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

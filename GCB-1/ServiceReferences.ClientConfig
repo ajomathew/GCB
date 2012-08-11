@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_IServiceGCB" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:4278/ServiceGCB.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_IServiceGCB" contract="ServiceReference1.IServiceGCB"
+                name="BasicHttpBinding_IServiceGCB" />
+        </client>
+    </system.serviceModel>
+</configuration>
