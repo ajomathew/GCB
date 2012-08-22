@@ -62,10 +62,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Liquid">
-      <HintPath>G:\My Doc\My Dropbox\Main Project\Resources\Liquid_5_3_3\Liquid Controls 5.3.3\Liquid.dll</HintPath>
+      <HintPath>Resources\Liquid.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Expression.Effects" />
-    <Reference Include="Microsoft.Expression.Interactions" />
+    <Reference Include="Microsoft.Expression.Effects">
+      <HintPath>Resources\Microsoft.Expression.Effects.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions">
+      <HintPath>Resources\Microsoft.Expression.Interactions.dll</HintPath>
+    </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="System.ComponentModel.DataAnnotations, Version=2.0.5.0, Culture=neutral, PublicKeyToken=ddd0da4d3e678217, processorArchitecture=MSIL" />
     <Reference Include="System.Data.Services.Client, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
@@ -98,7 +102,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Windows.Browser" />
     <Reference Include="XamlWriter">
-      <HintPath>G:\My Doc\My Dropbox\Main Project\Resources\XamlWriter.dll</HintPath>
+      <HintPath>Resources\XamlWriter.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -169,6 +173,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Fakes Include="Fakes\Liquid.fakes" />
     <None Include="Properties\AppManifest.xml">
       <SubType>Designer</SubType>
     </None>
